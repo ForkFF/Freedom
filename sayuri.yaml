@@ -147,8 +147,6 @@ proxy-groups:
       - 爱料理
       - 移动优选cm
       - 联通电信优选cm
-    type: select
-    proxies:
 rules:
   - DOMAIN,time.is,DIRECT
   - DOMAIN-SUFFIX,dcarapi.com,🌎 Proxies
