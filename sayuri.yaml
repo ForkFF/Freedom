@@ -55,19 +55,15 @@ proxies:
   - {name: GCORE中转, server: gcore.182682.xyz, port: 80, client-fingerprint: chrome, type: vless, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, tls: false, network: ws, ws-opts: {path: '/', headers: {Host: cmliussss.com}}}
   - {name: AnycastNode_PayPal, server: www.paypal.com.cn, port: 80, client-fingerprint: chrome, type: vless, uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30, tls: false, network: ws, ws-opts: {path: '/?ed=2048', headers: {Host: sdeweb.hkcsl.com}}}
   - {name: AnycastNode_UK, server: gov.uk, port: 80, client-fingerprint: chrome, type: vless, uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30, tls: false, network: ws, ws-opts: {path: '/?ed=2048', headers: {Host: sdeweb.hkcsl.com}}}
-  - {name: 🇭🇰 香港 - 1198, server: 36.151.192.198, port: 10879, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.198, skip-cert-verify: true}
-  - {name: 🇭🇰 香港 - 1201, server: 36.151.192.201, port: 51377, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.201, skip-cert-verify: true}
-  - {name: 🇭🇰 香港 - 1203, server: 36.151.192.203, port: 40388, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.203, skip-cert-verify: true}
-  - {name: 🇭🇰 VIP-香港 - 2215, server: 36.151.192.215, port: 25241, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.215, skip-cert-verify: true}
-  - {name: 🇯🇵 VIP-日本 - 1239, server: 36.151.192.239, port: 17806, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.239, skip-cert-verify: true}
   - {name: 🇯🇵 VIP-日本 - 2239, server: 36.151.192.239, port: 12176, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.239, skip-cert-verify: true}
   - {name: 🇯🇵 VIP-日本 - 2239 2, server: 36.151.192.239, port: 11892, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.239, skip-cert-verify: true}
   - {name: 🇺🇸 VIP-美国 - 1198, server: 36.151.192.198, port: 32705, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.198, skip-cert-verify: true}
-  - {name: 🇺🇸 VIP-美国 - 2198, server: 36.151.192.198, port: 47475, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.198, skip-cert-verify: true}
   - {name: 🇬🇧 VIP-英国 - 2242, server: 36.151.192.242, port: 44036, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.242, skip-cert-verify: true}
-  - {name: 🇳🇱 VIP-荷兰 - 1215, server: 36.151.192.215, port: 29769, client-fingerprint: chrome, type: trojan, password: uVDyjhhl, sni: 36.151.192.215, skip-cert-verify: true}
   - {name: 电信, server: ct.090227.xyz, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 移动优选IP, server: cfd.ipa.monster, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
+  - {name: 佳明, server: www.garmin.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
+  - {name: 极星, server: www.polestar.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
+  - {name: 印尼烟草集团, server: www.blibli.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: Sayuri优选IP, server: sayuri.cf.cname.vvhan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: vvhan优选IP, server: cf.vvhan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 香港低延迟IPv6, server: 2a06:98c1:56::4d45:3d73, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
@@ -82,7 +78,6 @@ proxies:
   - {name: 🇭🇰 移动-HKG-2024-10-14 16:27:37 3, server: 2606:4700:9b01::670:3aeb, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇭🇰 移动-HKG-2024-10-14 16:27:37 4, server: 2606:4700:9a91::6524:2a5c, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇭🇰 移动-HKG-2024-10-14 16:12:57, server: 2606:4700:9a95::b90:7d55, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
-  - {name: 徐州移动中转Oracle, server: iepl1.097420.xyz, port: 45222, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 32ba7d81-84be-11ef-bb6b-bc241111d95d}
   - {name: Fastly-CDN443端口, server: www.arizona.edu, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: www.arizona.edu, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: www.mfa.gov.kp}}}
   - {name: Fastly官网, server: fastly.com, port: 80, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: false, servername: gov.uk, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: www.mfa.gov.kp}}}
   - {name: Fastly英国政府, server: gov.uk, port: 80, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: false, servername: gov.uk, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: www.mfa.gov.kp}}}
@@ -103,19 +98,15 @@ proxy-groups:
       - GCORE中转
       - AnycastNode_PayPal
       - AnycastNode_UK
-      - 🇭🇰 香港 - 1198
-      - 🇭🇰 香港 - 1201
-      - 🇭🇰 香港 - 1203
-      - 🇭🇰 VIP-香港 - 2215
-      - 🇯🇵 VIP-日本 - 1239
       - 🇯🇵 VIP-日本 - 2239
       - 🇯🇵 VIP-日本 - 2239 2
       - 🇺🇸 VIP-美国 - 1198
-      - 🇺🇸 VIP-美国 - 2198
       - 🇬🇧 VIP-英国 - 2242
-      - 🇳🇱 VIP-荷兰 - 1215
       - 电信
       - 移动优选IP
+      - 佳明
+      - 极星
+      - 印尼烟草集团
       - Sayuri优选IP
       - vvhan优选IP
       - 香港低延迟IPv6
@@ -130,7 +121,6 @@ proxy-groups:
       - 🇭🇰 移动-HKG-2024-10-14 16:27:37 3
       - 🇭🇰 移动-HKG-2024-10-14 16:27:37 4
       - 🇭🇰 移动-HKG-2024-10-14 16:12:57
-      - 徐州移动中转Oracle
       - Fastly-CDN443端口
       - Fastly官网
       - Fastly英国政府
