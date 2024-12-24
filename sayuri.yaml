@@ -66,16 +66,10 @@ proxies:
   - {name: 🇭🇰 香港 - 印尼烟草集团, server: www.blibli.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇺🇸 美国华盛顿 - Sayuri, server: sayuri.cf.cname.vvhan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇭🇰 香港 - vvhan, server: cf.vvhan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
-  - {name: 🇭🇰 香港 - 低延迟IPv6, server: 2a06:98c1:56::4d45:3d73, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇭🇰 香港 - HKIX, server: 172.64.232.5, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇩🇪 德国黑森 - Visa, server: visa.cn, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇺🇸 美国华盛顿 - get.tech, server: get.tech, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇺🇸 美国华盛顿 - BootStrap, server: getbootstrap.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
-  - {name: 🇭🇰 香港 - 移动1, server: 2606:4700:8399::2a27:4316, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
-  - {name: 🇭🇰 香港 - 移动2, server: 2606:4700:ff00::4191:1f8, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
-  - {name: 🇭🇰 香港 - 移动3, server: 2606:4700:9b01::670:3aeb, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
-  - {name: 🇭🇰 香港 - 移动4, server: 2606:4700:9a91::6524:2a5c, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
-  - {name: 🇭🇰 香港 - 移动5, server: 2606:4700:9a95::b90:7d55, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇹🇼 台湾 - 电信专线, server: sstw01.mypokeworld.link, port: 54001, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: f17cbbdb-ec9a-42f4-9e35-3ea331ddfae9}
   - {name: 🇺🇸 美国 - Cloudflare雷达, server: performance.radar.cloudflare.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
   - {name: 🇺🇸 美国 - CloudflareLogCDN, server: cdn.logr-ingest.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
@@ -85,6 +79,8 @@ proxies:
   - {name: 🌐全球智能路由 - Python, server: www.python.org, port: 80, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: false, servername: gov.uk, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: www.csust.edu.cn}}}
   - {name: 🌐全球智能路由 - IPv6, server: 2a04:4e42:1a::645, port: 80, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: false, servername: gov.uk, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: www.csust.edu.cn}}}
   - {name: 🌐全球智能路由 - Arizona强加密, server: www.arizona.edu, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: www.arizona.edu, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: www.csust.edu.cn}}}
+  - {name: 🇭🇰 香港 - 移动IPv6, server: 2606:4700:9a91::6524:2a5c, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
+  - {name: 🇭🇰 香港 - 低延迟IPv6, server: 2a06:98c1:56::4d45:3d73, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: vless.lioil.us.kg, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: vless.lioil.us.kg}}}
 proxy-groups:
   - name: 🌎 Proxies
     type: select
@@ -104,16 +100,10 @@ proxy-groups:
       - 🇭🇰 香港 - 印尼烟草集团
       - 🇺🇸 美国华盛顿 - Sayuri
       - 🇭🇰 香港 - vvhan
-      - 🇭🇰 香港 - 低延迟IPv6
       - 🇭🇰 香港 - HKIX
       - 🇩🇪 德国黑森 - Visa
       - 🇺🇸 美国华盛顿 - get.tech
       - 🇺🇸 美国华盛顿 - BootStrap
-      - 🇭🇰 香港 - 移动1
-      - 🇭🇰 香港 - 移动2
-      - 🇭🇰 香港 - 移动3
-      - 🇭🇰 香港 - 移动4
-      - 🇭🇰 香港 - 移动5
       - 🇹🇼 台湾 - 电信专线
       - 🇺🇸 美国 - Cloudflare雷达
       - 🇺🇸 美国 - CloudflareLogCDN
@@ -123,6 +113,8 @@ proxy-groups:
       - 🌐全球智能路由 - Python
       - 🌐全球智能路由 - IPv6
       - 🌐全球智能路由 - Arizona强加密
+      - 🇭🇰 香港 - 移动IPv6
+      - 🇭🇰 香港 - 低延迟IPv6
 rules:
   - DOMAIN,speedtest.im,DIRECT
   - DOMAIN-SUFFIX,svc.ms,DIRECT
