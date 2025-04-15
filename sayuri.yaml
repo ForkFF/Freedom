@@ -9,8 +9,6 @@ dns:
     - '*.lan'
     - 'localhost.ptlogin2.qq.com'
     - '*.jegotrip.com.cn'
-    - '*.icitymobile.mobi'
-    - 'id6.me'
     - '*.189.cn'
     # Apple
     - 'swscan.apple.com'
@@ -25,28 +23,9 @@ dns:
     - 'xbox.*.microsoft.com'
     - 'xbox.*.*.microsoft.com'
     - '+.xboxlive.com'
-    # Game Service
-    - '+.stun.*.*'
-    - '+.stun.*.*.*'
-    - '+.stun.*.*.*.*'
-    - '+.stun.*.*.*.*.*'
-    - '+.srv.nintendo.net'
-    - '*.n.n.srv.nintendo.net'
-    - '+.stun.playstation.net'
-    - '+.battlenet.com.cn'
-    - '+.wotgame.cn'
-    - '+.wggames.cn'
-    - '+.wowsgame.cn'
-    - '+.wargaming.net'
-    - '*.square-enix.com'
-    - '*.finalfantasyxiv.com'
-    - '*.ffxiv.com'
-    - '*.ff14.sdo.com'
-    - 'ff.dorado.sdo.com'
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
-    - 114.114.114.114
 proxies:
   - {name: 🌐全球智能路由 - Fastly, server: fastly.com, port: 80, client-fingerprint: chrome, type: vless, uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30, tls: false, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: sdeweb.hkcsl.com}}}
   - {name: 🌐全球智能路由 - 英国政府, server: gov.uk, port: 80, client-fingerprint: chrome, type: vless, uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30, tls: false, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: sdeweb.hkcsl.com}}}
@@ -55,9 +34,13 @@ proxies:
   - {name: 🇭🇰 香港 - STACKS, server: 205.198.105.70, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
   - {name: 🇭🇰 香港 - 移动, server: 104.25.253.197, port: 2053, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, tfo: false, skip-cert-verify: true, servername: fast.wwxgxn.cfd, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: fast.wwxgxn.cfd}}}
   - {name: 🇭🇰 香港 - DMIT, server: 154.12.176.169, port: 11920, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, tfo: false, skip-cert-verify: true, servername: fast.wwxgxn.cfd, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: fast.wwxgxn.cfd}}}
-  - {name: 🇭🇰 香港 - Google, server: 34.92.105.182, port: 57820, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, tfo: false, skip-cert-verify: true, servername: fast.wwxgxn.cfd, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: fast.wwxgxn.cfd}}}
+  - {name: 🇭🇰 香港 - AKILE, server: 91.229.132.49, port: 8080, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, tfo: false, skip-cert-verify: true, servername: fast.wwxgxn.cfd, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: fast.wwxgxn.cfd}}}
   - {name: 🇺🇸 美国华盛顿 - DMIT, server: www.dmit.io, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
+  - {name: 🇺🇸 美国华盛顿 - MOEYY, server: github.moeyy.xyz, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
   - {name: 🇺🇸 美国华盛顿 - HubSpot, server: js.hubspot.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
+  - {name: 🇺🇸 美国华盛顿 - HubSpot1, server: js.hsadspixel.net, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
+  - {name: 🇺🇸 美国华盛顿 - HubSpot2, server: cta-service-cms2.hubspot.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
+  - {name: 🇺🇸 美国华盛顿 - HubSpot3, server: forms.hscollectedforms.net, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
   - {name: 🇺🇸 美国华盛顿 - 云中转, server: download.ywgho.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
   - {name: 🇺🇸 美国华盛顿 - Sayuri, server: sayuri.cf.cname.vvhan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
   - {name: 🇺🇸 美国华盛顿 - 优选IP, server: fk.bestip.one, port: 443, client-fingerprint: chrome, type: vless, uuid: 4608c798-2946-4ff8-90a3-a43be039ce36, tls: true, servername: fast.wwxgxn.cfd, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: fast.wwxgxn.cfd}}}
@@ -81,9 +64,13 @@ proxy-groups:
       - 🇭🇰 香港 - STACKS
       - 🇭🇰 香港 - 移动
       - 🇭🇰 香港 - DMIT
-      - 🇭🇰 香港 - Google
+      - 🇭🇰 香港 - AKILE
       - 🇺🇸 美国华盛顿 - DMIT
+      - 🇺🇸 美国华盛顿 - MOEYY
       - 🇺🇸 美国华盛顿 - HubSpot
+      - 🇺🇸 美国华盛顿 - HubSpot1
+      - 🇺🇸 美国华盛顿 - HubSpot2
+      - 🇺🇸 美国华盛顿 - HubSpot3
       - 🇺🇸 美国华盛顿 - 云中转
       - 🇺🇸 美国华盛顿 - Sayuri
       - 🇺🇸 美国华盛顿 - 优选IP
