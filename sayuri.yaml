@@ -32,7 +32,9 @@ proxies:
   - {name: 🇭🇰 香港 - DMIT, server: 154.12.179.238, port: 20177, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇭🇰 香港 - iLayer, server: 149.88.95.42, port: 2083, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇭🇰 香港 - LeaseWeb, server: 192.131.142.161, port: 46639, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇯🇵 日本 - 172, server: 172.64.229.15, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇺🇸 美国华盛顿 - 104, server: 104.19.73.126, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - VPS789, server: bestcf.top, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇺🇸 美国华盛顿 - Workers, server: workers.cloudflare.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇺🇸 美国华盛顿 - Pages, server: pages.cloudflare.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇺🇸 美国华盛顿 - Notability, server: notability.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
@@ -40,6 +42,7 @@ proxies:
   - {name: 🇺🇸 美国阿什本 - AWS, server: 7a059b09-749e-4995-9b56-562fac29b459.deepnoteproject.com, port: 443, client-fingerprint: chrome, type: vless, uuid: fecc0ba6-f68e-408d-ae8e-fe27c25223fc, tls: true, network: ws, ws-opts: {path: '/ws?ed=2560', headers: {Host: 7a059b09-749e-4995-9b56-562fac29b459.deepnoteproject.com}}}
   - {name: 🇫🇷 法国 - Wise, server: platform.wise.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇩🇪 德国 - 宝塔, server: www.aapanel.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇩🇪 德国 - Visa, server: www.visa.cn, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇺🇸 美国华盛顿 - Risu, server: risu.io, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇺🇸 美国华盛顿 - OralB, server: oralb.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇺🇸 美国华盛顿 - Delivr, server: delivr.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
@@ -67,7 +70,9 @@ proxy-groups:
       - 🇭🇰 香港 - DMIT
       - 🇭🇰 香港 - iLayer
       - 🇭🇰 香港 - LeaseWeb
+      - 🇯🇵 日本 - 172
       - 🇺🇸 美国华盛顿 - 104
+      - 🇺🇸 美国华盛顿 - VPS789
       - 🇺🇸 美国华盛顿 - Workers
       - 🇺🇸 美国华盛顿 - Pages
       - 🇺🇸 美国华盛顿 - Notability
@@ -75,6 +80,7 @@ proxy-groups:
       - 🇺🇸 美国阿什本 - AWS
       - 🇫🇷 法国 - Wise
       - 🇩🇪 德国 - 宝塔
+      - 🇩🇪 德国 - Visa
       - 🇺🇸 美国华盛顿 - Risu
       - 🇺🇸 美国华盛顿 - OralB
       - 🇺🇸 美国华盛顿 - Delivr
@@ -95,20 +101,38 @@ proxy-groups:
       - 🇺🇸 美国华盛顿 - 微测网
       - 🇺🇸 美国 - Notion
 rules:
+  # Apple
+  # Tencent
+  # Aliyun
+  # AirClipboard
   - DOMAIN,airclipbd.com,DIRECT
+  # Sharepoint
   - DOMAIN-SUFFIX,svc.ms,DIRECT
+  # Speedtest
   - DOMAIN,speedtest.im,DIRECT
+  # Time.is
   - DOMAIN,time.is,DIRECT
+  # 无忧行
   - DOMAIN,app3.jegotrip.com.cn,🌎 Proxies
+  # Bilibili
   - DOMAIN,api.bilibili.com,🌎 Proxies
+  # 即刻
   - DOMAIN-SUFFIX,ruguoapp.com,🌎 Proxies
   - DOMAIN-SUFFIX,jellow.site,🌎 Proxies
+  # 懂车帝
   - DOMAIN-SUFFIX,dcarapi.com,🌎 Proxies
+  # 微博
   - DOMAIN,api.weibo.cn,🌎 Proxies
   - DOMAIN-SUFFIX,weibo.com,🌎 Proxies
+  # 百度贴吧
   - DOMAIN,tieba.baidu.com,🌎 Proxies
   - DOMAIN,tiebac.baidu.com,🌎 Proxies
   - DOMAIN,c.tieba.baidu.com,🌎 Proxies
+  # Gemini
+  # 5278
+  # Wealthsimple
+  # 小红书
+  # Linkedin
   - DOMAIN,e122475.dscg.akamaiedge.net,🌎 Proxies
   - DOMAIN,licdn.cn.cdn20.com,🌎 Proxies
   - DOMAIN,linkedin.sc.omtrdc.net,🌎 Proxies
