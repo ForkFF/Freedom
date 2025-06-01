@@ -1,0 +1,59 @@
+
+dns:
+  enable: true
+  ipv6: true
+
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+
+  listen: 0.0.0.0:1053
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+
+proxies:
+  - name: "水灵-pages.cloudflare.com-443"
+    type: vless
+    server: pages.cloudflare.com
+    port: 443
+    uuid: 25284107-7424-40a5-8396-cdd0623f4f05
+    udp: false
+    tls: true
+    network: ws
+    servername: tssl.pages.dev
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: tssl.pages.dev
+  - name: "水灵-workers.cloudflare.com-443"
+    type: vless
+    server: workers.cloudflare.com
+    port: 443
+    uuid: 25284107-7424-40a5-8396-cdd0623f4f05
+    udp: false
+    tls: true
+    network: ws
+    servername: tssl.pages.dev
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: tssl.pages.dev
+proxy-groups:
+  - name: "自动选择"
+    type: url-test
+    url: "https://www.google.com/generate_204"
+    interval: 30
+    tolerance: 50
+    proxies:
+      - "水灵-pages.cloudflare.com-443"
+      - "水灵-workers.cloudflare.com-443"
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,自动选择
