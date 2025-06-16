@@ -1,6 +1,3 @@
-port: 7890
-socks-port: 7891
-mode: rule
 dns:
   enable: true
   ipv6: true
@@ -28,51 +25,50 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
 proxies:
-  - {name: 🇭🇰 香港 - DMIT, server: 154.12.179.238, port: 20177, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🌐全球智能路由 - 阿里云, server: 1750049755258.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua, port: 2053, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: true, servername: 1750049800117.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua, client-fingerprint: randomized, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 1750049800117.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua}}}
+  - {name: 🇭🇰 香港 - DMIT, server: 154.12.179.238, port: 20177, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇹🇼 台湾 - GCP, server: www.gov.se, port: 443, type: vmess, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, alterId: 0, cipher: auto, tls: true, client-fingerprint: chrome, servername: argo.wwxgxn.cfd, network: ws, ws-opts: {path: "/1950a49e-68b4-44cd-b92b-1fae3729f048-vm?ed=2560", headers: {Host: argo.wwxgxn.cfd}}}
-  - {name: 🇯🇵 日本 - 172, server: 172.64.229.15, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - 104, server: 104.19.73.126, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国 - 89, server: 89.116.250.99, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国 - 154, server: 154.211.8.2, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - VPS789, server: bestcf.top, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - CFIP, server: cfip.1323123.xyz, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - 澳洲驻华使馆, server: china.embassy.gov.au, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - Workers, server: workers.cloudflare.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - Pages, server: pages.cloudflare.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇩🇪 德国 - Notability, server: notability.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - 冰书, server: cf.cdn.bingbook.cn, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇯🇵 日本 - 阿里云HY2, server: 47.79.93.186, port: 31770, client-fingerprint: chrome, type: hysteria2, password: 1950a49e-68b4-44cd-b92b-1fae3729f048, auth: 1950a49e-68b4-44cd-b92b-1fae3729f048, sni: www.bing.com, skip-cert-verify: true, alpn: [h3]}
+  - {name: 🇯🇵 日本 - 阿里云Reality, server: 47.79.95.213, port: 43432, reality-opts: {public-key: IvVufMvCTNqrE6eSLq26yFQswmN49rUw16R8IAvjr3g, short-id: "ffeb6f96" }, client-fingerprint: chrome, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: swcdn.apple.com, network: tcp}
+  - {name: 🌐全球智能路由 - Best, server: bestproxy.030101.xyz, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - Best, server: bestcf.030101.xyz, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - Convera, server: convera.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - 104, server: 104.19.73.126, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - 190, server: 190.93.246.191, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - 澳洲驻华使馆, server: china.embassy.gov.au, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - Pages, server: pages.cloudflare.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇩🇪 德国 - Notability, server: notability.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - 冰书, server: cf.cdn.bingbook.cn, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
   - {name: 🇺🇸 美国阿什本 - AWS, server: 7a059b09-749e-4995-9b56-562fac29b459.deepnoteproject.com, port: 443, client-fingerprint: chrome, type: vless, uuid: fecc0ba6-f68e-408d-ae8e-fe27c25223fc, tls: true, network: ws, ws-opts: {path: '/ws?ed=2560', headers: {Host: 7a059b09-749e-4995-9b56-562fac29b459.deepnoteproject.com}}}
-  - {name: 🇫🇷 法国 - Wise, server: platform.wise.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇩🇪 德国 - 宝塔, server: www.aapanel.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇩🇪 德国 - Visa, server: www.visa.cn, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - OralB, server: oralb.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - Delivr, server: delivr.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - Cloudflare, server: www.cloudflare.net, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - Cloudflare ONE, server: one.dash.cloudflare.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - Steam, server: cdn.cloudflare.steamstatic.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇩🇪 德国 - 新加坡, server: singapore.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇩🇪 德国 - 卡塔尔政府, server: www.gco.gov.qa, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - MOEYY, server: github.moeyy.xyz, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - HubSpot, server: js.hubspot.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🌐全球智能路由 - 优选IP, server: fk.bestip.one, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - 印尼鹰航, server: www.garuda-indonesia.com, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - 瑞典政府, server: www.gov.se, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国华盛顿 - 微测网, server: sayuri.cloudflare.182682.xyz, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
-  - {name: 🇺🇸 美国 - Notion, server: notion.site, port: 443, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇫🇷 法国 - Wise, server: platform.wise.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇩🇪 德国 - 宝塔, server: www.aapanel.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇩🇪 德国 - Visa, server: www.visa.cn, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - OralB, server: oralb.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - Delivr, server: delivr.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - Steam, server: cdn.cloudflare.steamstatic.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇩🇪 德国 - 新加坡, server: singapore.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇩🇪 德国 - 卡塔尔政府, server: www.gco.gov.qa, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - HubSpot, server: js.hubspot.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🌐全球智能路由 - 优选IP, server: fk.bestip.one, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - 印尼鹰航, server: www.garuda-indonesia.com, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国华盛顿 - 瑞典政府, server: www.gov.se, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🌐全球智能路由 - 微测网, server: sayuri.cloudflare.182682.xyz, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
+  - {name: 🇺🇸 美国 - Notion, server: notion.site, port: 2053, type: vless, uuid: 1950a49e-68b4-44cd-b92b-1fae3729f048, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: freebird.sayuri.dpdns.org, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: freebird.sayuri.dpdns.org}}}
 proxy-groups:
   - name: 🌎 Proxies
     type: select
     proxies:
+      - 🌐全球智能路由 - 阿里云
       - 🇭🇰 香港 - DMIT
       - 🇹🇼 台湾 - GCP
-      - 🇯🇵 日本 - 172
+      - 🇯🇵 日本 - 阿里云HY2
+      - 🇯🇵 日本 - 阿里云Reality
+      - 🌐全球智能路由 - Best
+      - 🇺🇸 美国华盛顿 - Best
+      - 🇺🇸 美国华盛顿 - Convera
       - 🇺🇸 美国华盛顿 - 104
-      - 🇺🇸 美国 - 89
-      - 🇺🇸 美国 - 154
-      - 🇺🇸 美国华盛顿 - VPS789
-      - 🇺🇸 美国华盛顿 - CFIP
+      - 🇺🇸 美国华盛顿 - 190
       - 🇺🇸 美国华盛顿 - 澳洲驻华使馆
-      - 🇺🇸 美国华盛顿 - Workers
       - 🇺🇸 美国华盛顿 - Pages
       - 🇩🇪 德国 - Notability
       - 🇺🇸 美国华盛顿 - 冰书
@@ -82,20 +78,18 @@ proxy-groups:
       - 🇩🇪 德国 - Visa
       - 🇺🇸 美国华盛顿 - OralB
       - 🇺🇸 美国华盛顿 - Delivr
-      - 🇺🇸 美国华盛顿 - Cloudflare
-      - 🇺🇸 美国华盛顿 - Cloudflare ONE
       - 🇺🇸 美国华盛顿 - Steam
       - 🇩🇪 德国 - 新加坡
       - 🇩🇪 德国 - 卡塔尔政府
-      - 🇺🇸 美国华盛顿 - MOEYY
       - 🇺🇸 美国华盛顿 - HubSpot
       - 🌐全球智能路由 - 优选IP
       - 🇺🇸 美国华盛顿 - 印尼鹰航
       - 🇺🇸 美国华盛顿 - 瑞典政府
-      - 🇺🇸 美国华盛顿 - 微测网
+      - 🌐全球智能路由 - 微测网
       - 🇺🇸 美国 - Notion
 rules:
   # Apple
+  - DOMAIN-SUFFIX,apple.com,DIRECT
   # Tencent
   # Aliyun
   # AirClipboard
