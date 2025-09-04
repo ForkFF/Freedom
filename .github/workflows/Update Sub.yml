@@ -1,0 +1,71 @@
+name: Update VLESS Proxies
+
+on:
+  schedule:
+    - cron: '5 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-proxies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml requests
+
+      - name: Fetch subscription and update YAML
+        run: |
+          python << 'EOF'
+          import re
+          import requests
+          
+          # 1. 获取文本
+          sub_url = "https://cfxr.eu.org/getSub"
+          sub_response = requests.get(sub_url)
+          sub_response.raise_for_status()
+          sub_text = sub_response.text
+          
+          # 2. 提取 vless://uuid 中的 UUID
+          # UUID 的格式是 8-4-4-4-12 的十六进制
+          uuid_match = re.search(r'vless://([0-9a-fA-F\-]{36})@', sub_text)
+          if not uuid_match:
+              raise ValueError("没有找到 vless UUID")
+          uuid = uuid_match.group(1)
+          print(f"提取到的 UUID: {uuid}")
+          
+          # 3. 拉取 YAML 文件
+          yaml_url = "https://raw.githubusercontent.com/ForkFF/Freedom/refs/heads/main/sayuri.yaml"
+          yaml_response = requests.get(yaml_url)
+          yaml_response.raise_for_status()
+          yaml_text = yaml_response.text
+          
+          # 4. 使用正则替换 UUID
+          # 匹配 - {name: ..., uuid: ...} 中的 uuid
+          def replace_uuid(match):
+              # match.group(0) 是整行，match.group(1) 是原来的 UUID
+              return match.group(0).replace(match.group(1), uuid)
+          
+          pattern = re.compile(r'uuid:\s*([0-9a-fA-F\-]{36})')
+          yaml_modified = pattern.sub(replace_uuid, yaml_text)
+          
+          # 5. 输出或保存
+          with open("sayuri.yaml", "w", encoding="utf-8") as f:
+              f.write(yaml_modified)
+          EOF
+          
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add sayuri.yaml
+          git commit -m "Update VLESS proxies from subscription" || echo "No changes to commit"
+          git push
