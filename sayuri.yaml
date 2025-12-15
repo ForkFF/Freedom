@@ -50,9 +50,6 @@ proxies:
 - {name: 🇺🇸 美国华盛顿 - Pages, server: pages.cloudflare.com, port: 2053, type: vless, uuid: 693fefca-beeb-c140-78a2-b117ba839129, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saasorg.saaas.ccwu.cc, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: saasorg.saaas.ccwu.cc}}}
 - {name: 🇬🇧 英国 - Cloudflare, server: quick-edit.devprod.cloudflare.dev, port: 2053, type: vless, uuid: 693fefca-beeb-c140-78a2-b117ba839129, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saasorg.saaas.ccwu.cc, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: saasorg.saaas.ccwu.cc}}}
 - {name: 🇩🇪 德国 - Notability, server: notability.com, port: 2053, type: vless, uuid: 693fefca-beeb-c140-78a2-b117ba839129, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saasorg.saaas.ccwu.cc, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: saasorg.saaas.ccwu.cc}}}
-- {name: 🇺🇸 美国阿什本 - AWS, server: 7a059b09-749e-4995-9b56-562fac29b459.deepnoteproject.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 693fefca-beeb-c140-78a2-b117ba839129, tls: true, network: ws, ws-opts: {path: '/ws?ed=2560', headers: {Host: saasorg.saaas.ccwu.cc}}, servername: saasorg.saaas.ccwu.cc}
-- {name: 🇺🇸 美国圣何塞 - Reality, server: rn.wwxgxn.cfd, port: 443, reality-opts: {public-key: m93ugpz4lWSvG5wPlqth_HrgdqLE-VUy_CdiV2mPuhk, short-id: "c2dcaf2f9673f6e9"}, client-fingerprint: chrome, type: vless, uuid: 693fefca-beeb-c140-78a2-b117ba839129, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: saasorg.saaas.ccwu.cc, network: tcp, ws-opts: {headers: {Host: saasorg.saaas.ccwu.cc}}}
-- {name: 🇺🇸 美国圣何塞 - CDN, server: www.ntu.edu.sg, port: 8443, client-fingerprint: chrome, type: vless, uuid: 693fefca-beeb-c140-78a2-b117ba839129, tls: true, alpn: [h2], tfo: false, skip-cert-verify: false, servername: saasorg.saaas.ccwu.cc, network: ws, ws-opts: {path: '/sayuri?ed=2560', headers: {Host: saasorg.saaas.ccwu.cc}}}
 - {name: 🇫🇷 法国 - Wise, server: platform.wise.com, port: 2053, type: vless, uuid: 693fefca-beeb-c140-78a2-b117ba839129, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saasorg.saaas.ccwu.cc, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: saasorg.saaas.ccwu.cc}}}
 - {name: 🇩🇪 德国 - 宝塔, server: www.aapanel.com, port: 2053, type: vless, uuid: 693fefca-beeb-c140-78a2-b117ba839129, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saasorg.saaas.ccwu.cc, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: saasorg.saaas.ccwu.cc}}}
 - {name: 🇺🇸 美国华盛顿 - OralB, server: oralb.com, port: 2053, type: vless, uuid: 693fefca-beeb-c140-78a2-b117ba839129, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saasorg.saaas.ccwu.cc, network: ws, ws-opts: {path: '/?ed=2560', headers: {Host: saasorg.saaas.ccwu.cc}}}
@@ -96,9 +93,6 @@ proxy-groups:
   - 🇺🇸 美国华盛顿 - Pages
   - 🇬🇧 英国 - Cloudflare
   - 🇩🇪 德国 - Notability
-  - 🇺🇸 美国阿什本 - AWS
-  - 🇺🇸 美国圣何塞 - Reality
-  - 🇺🇸 美国圣何塞 - CDN
   - 🇫🇷 法国 - Wise
   - 🇩🇪 德国 - 宝塔
   - 🇺🇸 美国华盛顿 - OralB
