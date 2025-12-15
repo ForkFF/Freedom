@@ -1,0 +1,44 @@
+name: Auto Update Clash Config
+
+on:
+  schedule:
+    # 北京时间每天早上 6:00 运行 (UTC 22:00)
+    - cron: '0 22 * * *'
+  workflow_dispatch: # 允许手动点击按钮触发
+
+jobs:
+  update-clash:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 赋予写权限以便提交更改
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install requests ruamel.yaml
+
+      - name: Run update script
+        run: python update_clash.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          
+          # 检查是否有文档被修改
+          if [[ -n $(git status -s) ]]; then
+            echo "Changes detected, committing..."
+            git add sayuri.yaml
+            git commit -m "Auto-update vless config: uuid/servername/host"
+            git push
+          else
+            echo "No changes detected."
+          fi
