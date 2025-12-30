@@ -73,6 +73,9 @@ def update_proxies():
     yaml = YAML()
     yaml.preserve_quotes = True
     yaml.width = 4096 # 防止自动换行
+
+    # 保留缩进
+    yaml.indent(mapping=2, sequence=4, offset=2)
     
     try:
         with open(TARGET_FILE, 'r', encoding='utf-8') as f:
