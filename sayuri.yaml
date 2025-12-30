@@ -82,32 +82,32 @@ proxy-groups:
       - 🇺🇸 美国华盛顿 - 三网优化
       - 🇺🇸 美国华盛顿 - 162
 rules:
-# Apple
+  # Apple
   - DOMAIN-SUFFIX,apple.com,DIRECT
-# AirClipboard
+  # AirClipboard
   - DOMAIN,airclipbd.com,DIRECT
   - DOMAIN,boardrop.app,DIRECT
-# Speedtest
+  # Speedtest
   - DOMAIN,speedtest.im,DIRECT
-# Time.is
+  # Time.is
   - DOMAIN,time.is,DIRECT
-# 无忧行
+  # 无忧行
   - DOMAIN,app3.jegotrip.com.cn,🌎 Proxies
-# Bilibili
+  # Bilibili
   - DOMAIN,api.bilibili.com,🌎 Proxies
-# 即刻
+  # 即刻
   - DOMAIN-SUFFIX,ruguoapp.com,🌎 Proxies
   - DOMAIN-SUFFIX,jellow.site,🌎 Proxies
-# 懂车帝
+  # 懂车帝
   - DOMAIN-SUFFIX,dcarapi.com,🌎 Proxies
-# 微博
+  # 微博
   - DOMAIN,api.weibo.cn,🌎 Proxies
   - DOMAIN-SUFFIX,weibo.com,🌎 Proxies
-# 百度贴吧
+  # 百度贴吧
   - DOMAIN,tieba.baidu.com,🌎 Proxies
   - DOMAIN,tiebac.baidu.com,🌎 Proxies
   - DOMAIN,c.tieba.baidu.com,🌎 Proxies
-# Linkedin
+  # Linkedin
   - DOMAIN,e122475.dscg.akamaiedge.net,🌎 Proxies
   - DOMAIN,licdn.cn.cdn20.com,🌎 Proxies
   - DOMAIN,linkedin.sc.omtrdc.net,🌎 Proxies
