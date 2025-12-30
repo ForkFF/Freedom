@@ -87,8 +87,6 @@ rules:
   # AirClipboard
 - DOMAIN,airclipbd.com,DIRECT
 - DOMAIN,boardrop.app,DIRECT
-  # Sharepoint
-- DOMAIN-SUFFIX,svc.ms,DIRECT
   # Speedtest
 - DOMAIN,speedtest.im,DIRECT
   # Time.is
