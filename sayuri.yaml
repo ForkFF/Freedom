@@ -25,10 +25,10 @@ dns:
   - 223.5.5.5
   - 119.29.29.29
 proxies:
-- {name: 🇭🇰 香港 - 移动, server: 104.17.53.155, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
-- {name: 🇭🇰 香港 - CMI, server: 104.16.241.241, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
+- {name: 🇭🇰 香港 - 移动, server: bestcf.030101.xyz, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
+- {name: 🇭🇰 香港 - 三网优化, server: cloudflare.seeck.cn, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇯🇵 日本 - Visa, server: www.visa.cn, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
-- {name: 🇺🇸 美国华盛顿 - DMIT, server: 154.17.233.238, port: 104, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
+- {name: 🇺🇸 美国华盛顿 - DMIT, server: 154.17.4.192, port: 8084, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇺🇸 美国华盛顿 - ZeroTrust, server: one.dash.cloudflare.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇺🇸 美国华盛顿 - 联想拯救者, server: legion.lenovo.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇺🇸 美国华盛顿 - 联想, server: go2.lenovo.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
@@ -41,8 +41,6 @@ proxies:
 - {name: 🇩🇪 德国 - Notability, server: notability.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇫🇷 法国 - Wise, server: platform.wise.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇩🇪 德国 - 宝塔, server: www.aapanel.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
-- {name: 🇺🇸 美国华盛顿 - OralB, server: oralb.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
-- {name: 🇺🇸 美国华盛顿 - Delivr, server: delivr.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇩🇪 德国 - 新加坡, server: singapore.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇩🇪 德国 - 卡塔尔政府, server: www.gco.gov.qa, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🌐全球智能路由 - cfxr, server: cfxr.eu.org, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
@@ -51,14 +49,14 @@ proxies:
 - {name: 🇺🇸 美国华盛顿 - 印尼鹰航, server: www.garuda-indonesia.com, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇺🇸 美国华盛顿 - 瑞典政府, server: www.gov.se, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇺🇸 美国 - Notion, server: notion.site, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
-- {name: 🇺🇸 美国华盛顿 - 190, server: 190.93.246.191, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
+- {name: 🇺🇸 美国华盛顿 - 三网优化, server: 1357900.xyz, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 - {name: 🇺🇸 美国华盛顿 - 162, server: 162.159.254.137, port: 2053, type: vless, uuid: 6953236c-f0a2-59b8-bc60-f08256cf3371, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: saas.frii.site, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: saas.frii.site}}}
 proxy-groups:
 - name: 🌎 Proxies
   type: select
   proxies:
   - 🇭🇰 香港 - 移动
-  - 🇭🇰 香港 - CMI
+  - 🇭🇰 香港 - 三网优化
   - 🇯🇵 日本 - Visa
   - 🇺🇸 美国华盛顿 - DMIT
   - 🇺🇸 美国华盛顿 - ZeroTrust
@@ -73,8 +71,6 @@ proxy-groups:
   - 🇩🇪 德国 - Notability
   - 🇫🇷 法国 - Wise
   - 🇩🇪 德国 - 宝塔
-  - 🇺🇸 美国华盛顿 - OralB
-  - 🇺🇸 美国华盛顿 - Delivr
   - 🇩🇪 德国 - 新加坡
   - 🇩🇪 德国 - 卡塔尔政府
   - 🌐全球智能路由 - cfxr
@@ -83,13 +79,11 @@ proxy-groups:
   - 🇺🇸 美国华盛顿 - 印尼鹰航
   - 🇺🇸 美国华盛顿 - 瑞典政府
   - 🇺🇸 美国 - Notion
-  - 🇺🇸 美国华盛顿 - 190
+  - 🇺🇸 美国华盛顿 - 三网优化
   - 🇺🇸 美国华盛顿 - 162
 rules:
   # Apple
 - DOMAIN-SUFFIX,apple.com,DIRECT
-  # Tencent
-  # Aliyun
   # AirClipboard
 - DOMAIN,airclipbd.com,DIRECT
 - DOMAIN,boardrop.app,DIRECT
@@ -115,10 +109,6 @@ rules:
 - DOMAIN,tieba.baidu.com,🌎 Proxies
 - DOMAIN,tiebac.baidu.com,🌎 Proxies
 - DOMAIN,c.tieba.baidu.com,🌎 Proxies
-  # Gemini
-  # 5278
-  # Wealthsimple
-  # 小红书
   # Linkedin
 - DOMAIN,e122475.dscg.akamaiedge.net,🌎 Proxies
 - DOMAIN,licdn.cn.cdn20.com,🌎 Proxies
