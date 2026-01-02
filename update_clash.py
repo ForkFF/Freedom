@@ -5,7 +5,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 # 配置部分
-SOURCE_URL = "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fns.2026565.xyz%2F66666&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FForkFF%2FFreedom%2Frefs%2Fheads%2Fmain%2Fsubconfig-min.ini&exclude=(%E5%85%8D%E8%B4%B9%7C%E7%8F%8D%E6%83%9C%7C%E7%BE%A4%E7%BB%84%7C%E5%AE%98%E6%96%B9)&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+SOURCE_URL = "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fns.2026565.xyz%2F202666&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FForkFF%2FFreedom%2Frefs%2Fheads%2Fmain%2Fsubconfig-min.ini&exclude=(%E5%85%8D%E8%B4%B9%7C%E7%8F%8D%E6%83%9C%7C%E7%BE%A4%E7%BB%84%7C%E5%AE%98%E6%96%B9)&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
 TARGET_FILE = "sayuri.yaml"
 
 def update_proxies():
