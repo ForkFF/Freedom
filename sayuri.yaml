@@ -25,6 +25,11 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
 proxies:
+  - {name: 🌐全球智能路由 - 三网优选1, server: cloudflare.seeck.cn, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=tw.william.us.ci?ed=2560', headers: {Host: ss.netlib.ccwu.cc}}}
+  - {name: 🌐全球智能路由 - 三网优选2, server: 1357900.xyz, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=tw.william.us.ci?ed=2560', headers: {Host: ss.netlib.ccwu.cc}}}
+  - {name: 🌐全球智能路由 - 三网优选3, server: nrt.xxxxxxxx.nyc.mn, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=tw.william.us.ci?ed=2560', headers: {Host: ss.netlib.ccwu.cc}}}
+  - {name: 🌐全球智能路由 - cfxr, server: cfxr.eu.org, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
+  - {name: 🌐全球智能路由 - Docker, server: docker.1panel.live, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
   - {name: 🇭🇰 香港 - 移动, server: bestcf.030101.xyz, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
   - {name: 🇭🇰 香港 - 三网优化, server: cloudflare.seeck.cn, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
   - {name: 🇯🇵 日本 - Visa, server: www.visa.cn, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
@@ -43,9 +48,6 @@ proxies:
   - {name: 🇩🇪 德国 - 宝塔, server: www.aapanel.com, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
   - {name: 🇩🇪 德国 - 新加坡, server: singapore.com, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
   - {name: 🇩🇪 德国 - 卡塔尔政府, server: www.gco.gov.qa, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
-  - {name: 🌐全球智能路由 - cfxr, server: cfxr.eu.org, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
-  - {name: 🇺🇸 美国华盛顿 - Shopify, server: shops.myshopify.com, port: 443, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
-  - {name: 🌐全球智能路由 - Docker, server: docker.1panel.live, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
   - {name: 🇺🇸 美国华盛顿 - 印尼鹰航, server: www.garuda-indonesia.com, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
   - {name: 🇺🇸 美国华盛顿 - 瑞典政府, server: www.gov.se, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
   - {name: 🇺🇸 美国 - Notion, server: notion.site, port: 2053, type: vless, uuid: 6957183f-3cd9-bc76-397f-65ced2f2ad0a, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: ss.netlib.ccwu.cc, network: ws, ws-opts: {path: '/proxyip=sjc.o00o.ooo', headers: {Host: ss.netlib.ccwu.cc}}}
@@ -55,6 +57,11 @@ proxy-groups:
   - name: 🌎 Proxies
     type: select
     proxies:
+      - 🌐全球智能路由 - 三网优选1
+      - 🌐全球智能路由 - 三网优选2
+      - 🌐全球智能路由 - 三网优选3
+      - 🌐全球智能路由 - cfxr
+      - 🌐全球智能路由 - Docker
       - 🇭🇰 香港 - 移动
       - 🇭🇰 香港 - 三网优化
       - 🇯🇵 日本 - Visa
@@ -73,9 +80,6 @@ proxy-groups:
       - 🇩🇪 德国 - 宝塔
       - 🇩🇪 德国 - 新加坡
       - 🇩🇪 德国 - 卡塔尔政府
-      - 🌐全球智能路由 - cfxr
-      - 🇺🇸 美国华盛顿 - Shopify
-      - 🌐全球智能路由 - Docker
       - 🇺🇸 美国华盛顿 - 印尼鹰航
       - 🇺🇸 美国华盛顿 - 瑞典政府
       - 🇺🇸 美国 - Notion
