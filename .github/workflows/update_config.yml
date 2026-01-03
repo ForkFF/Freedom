@@ -2,14 +2,14 @@ name: Auto Update Clash Config
 
 on:
   schedule:
-    - cron: '0 0,14 * * *'
-  workflow_dispatch: # 允许手动点击按钮触发
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
 
 jobs:
   update-clash:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 赋予写权限以便提交更改
+      contents: write
 
     steps:
       - name: Checkout code
