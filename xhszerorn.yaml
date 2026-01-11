@@ -11,7 +11,7 @@ dns:
     - 223.5.5.5
 proxies:
   - {name: Reality - 直连, server: xhszerorn.wwxgxn.cfd, port: 8888, type: vless, uuid: a44eda17-97b5-4d7f-9891-5bf1949643bf, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, reality-opts: {public-key: dlaL40Vbkt14JUPI__AaXNUFQjpIXqFwOZG6NrOPVVE, short-id: "844bcf13daa5d9" }, servername: updates.cdn-apple.com, client-fingerprint: chrome, network: tcp}
-  - {name: Websocket - 中转, server: blog.646474.xyz, port: 443, type: vless, uuid: 566af1b2-96be-455b-89ca-53e57b6388e1, tls: true, alpn: [h2], tfo: false, skip-cert-verify: false, servername: xhszerorncdn.wwxgxn.cfd, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sayuri?ed=2560", headers: {Host: xhszerorncdn.wwxgxn.cfd}}}
+  - {name: Websocket - 中转, server: cf-cname.xingpingcn.top, port: 443, type: vless, uuid: 566af1b2-96be-455b-89ca-53e57b6388e1, tls: true, alpn: [h2], tfo: false, skip-cert-verify: false, servername: xhszerorncdn.wwxgxn.cfd, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sayuri?ed=2560", headers: {Host: xhszerorncdn.wwxgxn.cfd}}}
   - {name: Websocket - 移动优化, server: 144.34.228.162, port: 443, type: vless, uuid: 566af1b2-96be-455b-89ca-53e57b6388e1, tls: true, alpn: [h2], tfo: false, skip-cert-verify: false, servername: xhszerorncdn.wwxgxn.cfd, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sayuri?ed=2560", headers: {Host: xhszerorncdn.wwxgxn.cfd}}}
 
 proxy-groups:
