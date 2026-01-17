@@ -31,7 +31,7 @@ jobs:
           if [[ -n $(git status -s) ]]; then
             echo "Changes detected, committing..."
             git add sayuri.yaml
-            git commit -m "Auto-update vless config: uuid/servername/host"
+            git commit -m "Domain updated!"
             git push
           else
             echo "No changes detected."
