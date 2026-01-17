@@ -1,0 +1,42 @@
+name: Auto Update Clash Config
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-clash:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install re random
+
+      - name: Run update script
+        run: python roundrobindomain.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          
+          if [[ -n $(git status -s) ]]; then
+            echo "Changes detected, committing..."
+            git add sayuri.yaml
+            git commit -m "Auto-update vless config: uuid/servername/host"
+            git push
+          else
+            echo "No changes detected."
+          fi
