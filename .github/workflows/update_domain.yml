@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install re random
+          pip install random
 
       - name: Run update script
         run: python roundrobindomain.py
