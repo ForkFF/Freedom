@@ -1,4 +1,4 @@
-name: Auto Update Clash Config
+name: Auto Update Domain
 
 on:
   schedule:
