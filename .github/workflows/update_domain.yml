@@ -20,10 +20,6 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Install dependencies
-        run: |
-          pip install random
-
       - name: Run update script
         run: python roundrobindomain.py
 
