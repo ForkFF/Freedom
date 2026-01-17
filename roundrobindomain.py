@@ -30,10 +30,10 @@ def update_yaml_domains(file_path):
     pattern_host = r'(Host:)\s+([a-zA-Z0-9\-\.]+)'
     content = re.sub(pattern_host, replace_domain, content)
 
-    with open('updated_config.yaml', 'w', encoding='utf-8') as f:
+    with open(file_path, 'w', encoding='utf-8') as f:
         f.write(content)
     
     print("YAML updated")
 
 if __name__ == "__main__":
-    update_yaml_domains('config.yaml')
+    update_yaml_domains('sayuri.yaml')
