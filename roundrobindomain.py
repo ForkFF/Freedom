@@ -15,25 +15,23 @@ domains = [
     'danfeng.sylu.net','snippet.443888.xyz'
 ]
 
-def update_yaml_domains(file_path):
+def update_yaml_with_single_domain(file_path):
+    selected_domain = random.choice(domains)
+    print(f"Random domain: {selected_domain}")
+
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
-
-    def replace_domain(match):
+    def replace_func(match):
         key = match.group(1)
-        new_domain = random.choice(domains)
-        return f"{key} {new_domain}"
+        return f"{key} {selected_domain}"
 
-    pattern_servername = r'(servername:)\s+([a-zA-Z0-9\-\.]+)'
-    content = re.sub(pattern_servername, replace_domain, content)
-
-    pattern_host = r'(Host:)\s+([a-zA-Z0-9\-\.]+)'
-    content = re.sub(pattern_host, replace_domain, content)
+    pattern = r'(servername:|Host:)\s+([a-zA-Z0-9\-\.]+)'
+    new_content = re.sub(pattern, replace_func, content)
 
     with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(content)
+        f.write(new_content)
     
-    print("YAML updated")
+    print("YAML updated!")
 
 if __name__ == "__main__":
-    update_yaml_domains('sayuri.yaml')
+    update_yaml_with_single_domain('sayuri.yaml')
