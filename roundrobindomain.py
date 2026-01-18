@@ -1,19 +1,38 @@
 import re
 import random
 
-domains = [
-    'snippet.gfw.nn.kg','snippet.fgfw.indevs.in','snippet.chinam.indevs.in',
-    'snippet.sheilabelinda.ndjp.net','snippet.danfeng.ndjp.net','snippet.fgfw.ye.gs',
-    'snippet.fgfw.cc.cd','snippet.fgfw.ccwu.cc','snippet.fgfw.de5.net',
-    'snippet.fgfw.us.ci','snippet.fgfw.eu.org','snippet.sh21.eu.org',
-    'snippet.fgfw.ndjp.net','snippet.danfeng.theworkpc.com','snippet.danfeng.ccwu.cc',
-    'snippet.danfeng.cc.cd','snippet.danfeng.eu.org','snippet.danfeng.site',
-    'snippet.danfeng.dedyn.io','snippet.danfeng.us.ci','snippet.danfeng.de5.net',
-    'snippet.danfeng.gleeze.com','snippet.danfeng.gv.uy','snippet.danfeng.nn.kg',
-    'snippet.danfeng.indevs.in','snippet.danfeng.kozow.com','snippet.danfeng.giize.com',
-    'snippet.danfeng.let.gs','snippet.gfw.hidns.co','danfeng.sylu.cc',
-    'danfeng.sylu.net','snippet.443888.xyz'
-]
+domains = ['snippet.gfw.nn.kg',
+    'snippet.fgfw.indevs.in',
+    'snippet.chinam.indevs.in',
+    'snippet.sheilabelinda.ndjp.net',
+    'snippet.danfeng21.ndjp.net',
+    'snippet.fgfw.ye.gs',
+    'snippet.fgfw.cc.cd',
+    'snippet.fgfw.ccwu.cc',
+    'snippet.fgfw.de5.net',
+    'snippet.fgfw.us.ci',
+    'snippet.fgfw.eu.org',
+    'snippet.sh21.eu.org',
+    'snippet.fgfw.ndjp.net',
+    'snippet.danfeng.theworkpc.com',
+    'snippet.danfeng.ccwu.cc',
+    'snippet.danfeng.cc.cd',
+    'snippet.danfeng.eu.org',
+    'snippet.danfeng.site',
+    'snippet.danfeng.dedyn.io',
+    'snippet.danfeng.us.ci',
+    'snippet.danfeng.de5.net',
+    'snippet.danfeng.gleeze.com',
+    'snippet.danfeng.gv.uy',
+    'snippet.danfeng.nn.kg',
+    'snippet.danfeng.indevs.in',
+    'snippet.danfeng.kozow.com',
+    'snippet.danfeng.let.gs',
+    'snippet.gfw.hidns.co',
+    'danfeng.sylu.cc',
+    'danfeng.sylu.net',
+    'snippet.443888.xyz'
+  ]
 
 def update_yaml_with_single_domain(file_path):
     selected_domain = random.choice(domains)
