@@ -1,7 +1,6 @@
-import re
 import urllib.parse
 import urllib.request
-import yaml
+from ruamel.yaml import YAML
 
 
 def fetch_subscription(url):
@@ -24,12 +23,11 @@ def parse_vless_url(vless_url):
         return None
 
     try:
-        # 去掉前缀
         url_body = vless_url[8:]
 
         # 解析 # 后的节点名/备注
         if "#" in url_body:
-            url_body, remark = url_body.split("#", 1)
+            url_body, _ = url_body.split("#", 1)
 
         # 解析 userinfo@server:port
         if "@" in url_body:
@@ -39,9 +37,8 @@ def parse_vless_url(vless_url):
 
         # 解析 server:port?query
         if "?" in rest:
-            server_port, query_str = rest.split("?", 1)
+            _, query_str = rest.split("?", 1)
         else:
-            server_port = rest
             query_str = ""
 
         # 解析查询参数
@@ -53,8 +50,8 @@ def parse_vless_url(vless_url):
 
         return {
             "uuid": uuid,
-            "sni": sni or host,  # 如果没写 sni，默认用 host
-            "host": host or sni,  # 如果没写 host，默认用 sni
+            "sni": sni or host,
+            "host": host or sni,
             "path": urllib.parse.unquote(path),
         }
     except Exception as e:
@@ -62,8 +59,8 @@ def parse_vless_url(vless_url):
         return None
 
 
-def update_yaml_file(yaml_path, parsed_info):
-    """更新 YAML 配置文档中的 proxies 字段"""
+def update_yaml_preserve_format(yaml_path, parsed_info):
+    """更新 YAML 配置文档，并严格保留原格式和注释"""
     if not parsed_info:
         print("未获取到有效的节点参数，取消更新。")
         return
@@ -79,10 +76,14 @@ def update_yaml_file(yaml_path, parsed_info):
     print(f" - Host: {new_host}")
     print(f" - Path: {new_path}")
 
-    # 读取原 YAML 文档
+    # 初始化 ruamel.yaml 并保留原格式配置
+    yaml = YAML()
+    yaml.preserve_quotes = True  # 保留原有引号风格
+    yaml.indent(mapping=2, sequence=4, offset=2)  # 设置缩进样式
+
     try:
         with open(yaml_path, "r", encoding="utf-8") as f:
-            config = yaml.safe_load(f)
+            config = yaml.load(f)
     except Exception as e:
         print(f"读取 {yaml_path} 失败: {e}")
         return
@@ -90,22 +91,20 @@ def update_yaml_file(yaml_path, parsed_info):
     # 替换 proxies 中的节点配置
     if "proxies" in config and isinstance(config["proxies"], list):
         for proxy in config["proxies"]:
-            # 针对 VLESS 协议的节点进行替换
             if proxy.get("type") == "vless":
                 proxy["uuid"] = new_uuid
                 proxy["servername"] = new_sni
 
-                # 更新 ws-opts 中的 headers 和 path
                 if "ws-opts" in proxy:
                     if "headers" in proxy["ws-opts"]:
                         proxy["ws-opts"]["headers"]["Host"] = new_host
                     proxy["ws-opts"]["path"] = new_path
 
-        # 写回 YAML 文档
+        # 原样写回 YAML 文档，保持缩进、注释和行间格式
         with open(yaml_path, "w", encoding="utf-8") as f:
-            yaml.dump(config, f, allow_unicode=True, sort_keys=False)
+            yaml.dump(config, f)
 
-        print(f"\n成功更新 {yaml_path}！")
+        print(f"\n成功更新 {yaml_path}（格式已完全保留）！")
     else:
         print("未在 YAML 中查找到 'proxies' 配置。")
 
@@ -118,7 +117,6 @@ if __name__ == "__main__":
     sub_content = fetch_subscription(sub_url)
 
     if sub_content:
-        # 按行分割订阅内容，取第一条有效的 VLESS 节点信息
         lines = [line.strip() for line in sub_content.splitlines() if line.strip()]
 
         vless_info = None
@@ -126,10 +124,10 @@ if __name__ == "__main__":
             if line.startswith("vless://"):
                 vless_info = parse_vless_url(line)
                 if vless_info:
-                    break  # 获取到第一个有效的 VLESS 配置后即退出
+                    break
 
         if vless_info:
             print("2. 正在更新配置...")
-            update_yaml_file(yaml_path, vless_info)
+            update_yaml_preserve_format(yaml_path, vless_info)
         else:
             print("未在订阅内容中找到有效的 vless:// 节点。")
