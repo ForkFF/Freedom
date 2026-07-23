@@ -123,7 +123,7 @@ if __name__ == "__main__":
 
         vless_info = None
         for line in lines:
-            if line.startswith("vless://"):
+            if line.startswith("vless://") and "CDN" in line:
                 vless_info = parse_vless_url(line)
                 if vless_info:
                     break
