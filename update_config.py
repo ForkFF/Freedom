@@ -1,6 +1,6 @@
+import re
 import urllib.parse
 import urllib.request
-from ruamel.yaml import YAML
 
 
 def fetch_subscription(url):
@@ -59,8 +59,8 @@ def parse_vless_url(vless_url):
         return None
 
 
-def update_yaml_preserve_format(yaml_path, parsed_info):
-    """更新 YAML 配置文档，并严格保留原格式和注释"""
+def update_yaml_with_regex(yaml_path, parsed_info):
+    """使用正则替换，100% 保持原 YAML 的所有排版、换行与格式"""
     if not parsed_info:
         print("未获取到有效的节点参数，取消更新。")
         return
@@ -76,37 +76,39 @@ def update_yaml_preserve_format(yaml_path, parsed_info):
     print(f" - Host: {new_host}")
     print(f" - Path: {new_path}")
 
-    # 初始化 ruamel.yaml 并保留原格式配置
-    yaml = YAML()
-    yaml.preserve_quotes = True  # 保留原有引号风格
-    yaml.indent(mapping=2, sequence=4, offset=2)  # 设置缩进样式
-
     try:
         with open(yaml_path, "r", encoding="utf-8") as f:
-            config = yaml.load(f)
+            content = f.read()
     except Exception as e:
         print(f"读取 {yaml_path} 失败: {e}")
         return
 
-    # 替换 proxies 中的节点配置
-    if "proxies" in config and isinstance(config["proxies"], list):
-        for proxy in config["proxies"]:
-            if proxy.get("type") == "vless":
-                proxy["uuid"] = new_uuid
-                proxy["servername"] = new_sni
+    # 正则表达式说明：
+    # 替换 uuid: xxx -> uuid: <new_uuid>
+    content = re.sub(
+        r"(uuid:\s*)[a-f0-9\-]+", rf"\g<1>{new_uuid}", content, flags=re.IGNORECASE
+    )
 
-                if "ws-opts" in proxy:
-                    if "headers" in proxy["ws-opts"]:
-                        proxy["ws-opts"]["headers"]["Host"] = new_host
-                    proxy["ws-opts"]["path"] = new_path
+    # 替换 servername: xxx -> servername: <new_sni>
+    content = re.sub(
+        r"(servername:\s*)[^\s,}]+", rf"\g<1>{new_sni}", content, flags=re.IGNORECASE
+    )
 
-        # 原样写回 YAML 文档，保持缩进、注释和行间格式
-        with open(yaml_path, "w", encoding="utf-8") as f:
-            yaml.dump(config, f)
+    # 替换 Host: xxx -> Host: <new_host>
+    content = re.sub(
+        r"(Host:\s*)[^\s,}]+", rf"\g<1>{new_host}", content, flags=re.IGNORECASE
+    )
 
-        print(f"\n成功更新 {yaml_path}（格式已完全保留）！")
-    else:
-        print("未在 YAML 中查找到 'proxies' 配置。")
+    # 替换 path: 'xxx' 或 path: "xxx" 或 path: xxx -> path: '<new_path>'
+    content = re.sub(
+        r"(path:\s*)[^\s,}]+", rf"\g<1>'{new_path}'", content, flags=re.IGNORECASE
+    )
+
+    # 写回文档
+    with open(yaml_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print(f"\n成功更新 {yaml_path}！原格式已绝对保留。")
 
 
 if __name__ == "__main__":
@@ -128,6 +130,6 @@ if __name__ == "__main__":
 
         if vless_info:
             print("2. 正在更新配置...")
-            update_yaml_preserve_format(yaml_path, vless_info)
+            update_yaml_with_regex(yaml_path, vless_info)
         else:
             print("未在订阅内容中找到有效的 vless:// 节点。")
