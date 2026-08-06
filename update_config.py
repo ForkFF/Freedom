@@ -1,21 +1,35 @@
 import re
 import urllib.parse
 import urllib.request
-
+import base64
 
 def fetch_subscription(url):
-    """从订阅 URL 获取节点文本内容"""
+    """从订阅 URL 获取节点文本内容（支持 Base64 订阅）"""
     try:
         req = urllib.request.Request(
-            url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"},
         )
+
         with urllib.request.urlopen(req) as response:
-            content = response.read().decode("utf-8")
-            return content
+            content = response.read().decode("utf-8").strip()
+
+        # 新增：Base64 解码
+        try:
+            # 补齐缺失的 =
+            padding = (-len(content)) % 4
+            content += "=" * padding
+
+            content = base64.b64decode(content).decode("utf-8")
+        except Exception:
+            # 如果本身不是 Base64，则直接返回原内容
+            pass
+
+        return content
+
     except Exception as e:
         print(f"获取订阅数据失败: {e}")
         return None
-
 
 def parse_vless_url(vless_url):
     """解析 VLESS URL，提取 uuid, sni, host, path 等信息"""
