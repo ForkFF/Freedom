@@ -126,7 +126,7 @@ def update_yaml_with_regex(yaml_path, parsed_info):
 
 
 if __name__ == "__main__":
-    sub_url = "https://hhdz.vavava.kdns.fr/mdw5"
+    sub_url = "https://hhsxy.vavava.kdns.fr/sub?token=25e95d1f8f790ad3e5359c501d5fc7ee"
     yaml_path = "sayuri.yaml"
 
     print("1. 正在拉取订阅数据...")
